@@ -1,0 +1,23 @@
+{
+  "short_name": "MedAdhere",
+  "name": "MedAdhere - Medication Adherence Tracker",
+  "description": "Track your medications, get reminders, and report adverse drug reactions even offline.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#007bff",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "scope": "/"
+}

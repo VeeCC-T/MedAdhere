@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+
+    <meta name="theme-color" content="#007bff" />
+    <meta
+      name="description"
+      content="MedAdhere helps you track medications, get reminders, and report adverse drug reactions even offline."
+    />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+
+    <!-- ✅ Updated iOS/PWA Meta Tags -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="MedAdhere" />
+
+    <!-- Language Handling -->
+    <meta http-equiv="Content-Language" content="en" />
+
+    <title>MedAdhere - Medication Adherence Tracker</title>
+    <script type="module" crossorigin src="/assets/index-BW8kZ2M9.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CjBr9X_r.css">
+  <link rel="manifest" href="/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script></head>
+
+  <body>
+    <noscript>
+      This app requires JavaScript to run properly. Please enable it in your
+      browser.
+    </noscript>
+
+    <div id="root"></div>
+
+
+    <!-- ✅ Register Service Worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .then((reg) =>
+              console.log("✅ Service Worker registered successfully:", reg)
+            )
+            .catch((err) =>
+              console.log("❌ Service Worker registration failed:", err)
+            );
+        });
+      }
+    </script>
+  </body>
+</html>
